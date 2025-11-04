@@ -7,7 +7,7 @@ export default async function UnFeaturedPosts() {
   const posts = await getUnFeaturedPosts();
 
   return (
-    <div>
+    <div className='my-10'>
       <h2 className='text-2xl font-bold my-2'>You May Like</h2>
       <MultiCarousel>
         {posts.map((post) => (
